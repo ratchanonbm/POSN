@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    int n,num=3;
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++){
+        printf("%d",num);
+        num += 5;
+        if(i!=n) printf(",");
+    }
+    return 0;
+}

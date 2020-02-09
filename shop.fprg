@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="qqpan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-07 11:01:34 PM"/>
+        <attribute name="created" value="cXFwYW47UkFUQ0hBTk9OLVBDOzIwMTktMTAtMDc7MTA6NDg6MzEgUE07MjY4OA=="/>
+        <attribute name="edited" value="cXFwYW47UkFUQ0hBTk9OLVBDOzIwMTktMTAtMDc7MTE6MDE6MzQgUE07MTsyNzg5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="T, a, b, p, q, c, i, j, k" type="Integer" array="False" size=""/>
+            <input variable="T"/>
+            <for variable="i" start="1" end="T" direction="inc" step="1">
+                <assign variable="c" expression="0"/>
+                <input variable="a"/>
+                <input variable="b"/>
+                <input variable="p"/>
+                <input variable="q"/>
+                <for variable="j" start="p" end="q" direction="inc" step="1">
+                    <for variable="k" start="p" end="q" direction="inc" step="1">
+                        <if expression="j*k&gt;=a&amp;&amp;j*k&lt;=b">
+                            <then>
+                                <assign variable="c" expression="c + 1"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </for>
+                </for>
+                <output expression="c" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

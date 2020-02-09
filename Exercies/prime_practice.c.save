@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int num,prime=1;
+    scanf("%d",&num);
+    if(num==1) printf("%d is not Prime");
+    else if(num==2) printf("%d is not Prime");
+    else if(num==2&&num!=2) printf("%d is not Prime");
+    else if(num==3&&num!=3) printf("%d is not Prime");
+    else if(num==5&&num!=5) printf("%d is not Prime");
+    else {
+        for(int i=7;i<=num;i++){
+            if(num%i==0) {
+                prime = 0;
+                break
+            }
+        }
+    }
+}
