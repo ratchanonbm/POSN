@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 #include <string.h>
 
 int main() {
@@ -39,15 +38,15 @@ int main() {
         }
     }
 
-    //Print all customer name
+    //Print all customer name by sort and waiting time
     printf("NO\tName\tWaiting Time\n");
 
     for(int i=0;i<5;i++){
-        //Get Customer Name
         printf("%d\t%s\t%d\n",i+1,queue[i],wait);
         if((i+1)%num_agent==0) wait+=20;
         if(strcmp(queue[i],my_name)==0) my_wait = wait;
     }
+
     printf("My waiting Time : %d",my_wait);
 
 }
